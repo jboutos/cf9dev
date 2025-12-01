@@ -1,0 +1,34 @@
+package gr.aueb.cf.cf9.review.challenges;
+
+import java.util.Scanner;
+
+/**
+ * Ένας αριθμός armstrong είναι ένας ακέραιος που είναι ίσος με το άθροισμα των ψηφίων του
+ * όπου το κάθε ψηφίο έχει υψωθεί στη δύναμη του αριθμού των ψηφίων.
+ * 153 = 1^3 + 5^3 + 3^3
+ */
+public class Armstrong {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int initialNum = 0;
+        int num = 0;
+        int numberOfDigits = 0;
+        int digit = 0;
+        int sum = 0;
+
+        System.out.println("Please enter a number: ");
+        num = scanner.nextInt();
+
+        numberOfDigits = String.valueOf(num).length();
+        initialNum = num;
+        while(num != 0) {
+            digit = num % 10;
+            sum += Math.pow(digit, numberOfDigits);
+            num /= 10;
+
+            System.out.printf("%d%s Armstrong%n", initialNum, (sum == initialNum) ? " is" : " is not");
+        }
+
+    }
+}
