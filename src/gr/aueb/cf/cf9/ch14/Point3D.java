@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch14;
+package gr.aueb.cf.cf9.ch14;
 
 public class Point3D extends Point2D {
     private double z;

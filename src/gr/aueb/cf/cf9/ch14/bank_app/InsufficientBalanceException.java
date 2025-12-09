@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch14.bank_app;
+package gr.aueb.cf.cf9.ch14.bank_app;
 
 public class InsufficientBalanceException extends Exception {
 

@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch14.bank_app;
+package gr.aueb.cf.cf9.ch14.bank_app;
 
 import java.time.LocalDateTime;
 
@@ -92,7 +92,7 @@ public class Account {
      * Withdraws the specified amopunt of money from the account
      * @param amount the amount of money to withdraw
      * @param ssn the ssn of ther account holder
-     * @throws InsufficientBalanceException if the amount is insufficient
+     * @throws InsufficientBalanceException if the balance is insufficient
      * @throws NegativeAmountException if the amount is negative
      * @throws SsnNotValidException if the ssn does not match
      */
